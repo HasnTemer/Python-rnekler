@@ -19,8 +19,10 @@ def sonuc():
         except:
             cevap = " ! HATA ! "
             ek = ""
+    ek = f"{cevap}"
     label_sonuc.config(text=cevap)
 def clear():
+    global ek
     ek = ""
     label_sonuc.config(text=ek)
 def show(x):
